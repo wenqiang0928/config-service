@@ -6,8 +6,6 @@ eureka:
 
 #服务的名称
 spring:
-  application:
-    name: order-service
   redis:
     database: 0
     host: 127.0.0.1
