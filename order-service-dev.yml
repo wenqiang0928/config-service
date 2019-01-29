@@ -6,6 +6,11 @@ eureka:
 
 #服务的名称
 spring:
+  rabbitmq:
+    host: 192.168.137.210
+    port: 5672
+    username: guest
+    password: guest
   redis:
     database: 0
     host: 127.0.0.1
