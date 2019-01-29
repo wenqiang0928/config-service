@@ -1,0 +1,18 @@
+server:
+  port: 8800
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+env: test
+spring:
+  application:
+    name: product-service
+  zipkin:
+    base-url: http://192.168.137.210:9411/
+  #配置采样百分比,开发环境可以设置为1，表示全部，生产就用默认
+  sleuth:
+    sampler:
+      probability: 1
