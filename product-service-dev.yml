@@ -8,6 +8,11 @@ eureka:
 
 env: test
 spring:
+  rabbitmq:
+    host: 192.168.137.210
+    port: 5672
+    username: guest
+    password: guest
   zipkin:
     base-url: http://192.168.137.210:9411/
   #配置采样百分比,开发环境可以设置为1，表示全部，生产就用默认
